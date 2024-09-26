@@ -4,7 +4,7 @@ import Nav from './components/spa/Nav';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Container">
       <Nav />
     </div>
   );
