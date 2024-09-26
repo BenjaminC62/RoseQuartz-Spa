@@ -3,6 +3,8 @@ import './App.css';
 import Greet from './components/Greet.js';
 import Welcome from './components/Welcome.js';
 import Mess from './components/Mess.js';
+import FunctionClick from './components/FunctionClick.js';
+import Click from './components/Click.js';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Greet name="Pikablok"/>
       <Welcome />
       <Mess />
+      <FunctionClick />
+      <Click />
     </div>
   );
 }
