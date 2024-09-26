@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Variables, utilities */
+
 :root{
 
     --primary-color: #c03667;
@@ -7,6 +11,9 @@
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Open Sans', sans-serif;
 
+    --front-index: z-index: 10;
+    --back-index: z-index: 1;
+
 }
 
 *{
@@ -15,25 +22,37 @@
     box-sizing: border-box;
 }
 
-
+/* Navbar */
 
 .liste-nav{
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
-.navbar{
+.sous-nav{
     background-color: var(--primary-color);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    display: flex;
+    align-items: center;
+}
+
+.right-content{
+    display: flex;
+    align-items: center;
 }
 
 li a{
     color: var(--thrid-color);
     text-decoration: none;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 30px;
+    font-family: var(--primary-font);
 }
 
 li a:hover{
