@@ -1,0 +1,41 @@
+:root{
+
+    --primary-color: #c03667;
+    --secondary-color: #d38b9c;
+    --thrid-color: #ffe3ef;
+
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.liste-nav{
+    list-style: none;
+    display: flex;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li a{
+    color: var(--thrid-color);
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 30px;
+}
+
+li a:hover{
+    background-color: var(--secondary-color);
+}
