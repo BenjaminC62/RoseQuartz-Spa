@@ -26,4 +26,34 @@
     color: var(--thrid-color);
     font-size: 72px;
     font-family: var(--primary-font);
+
+}
+
+.main-sub-title{
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    color: var(--thrid-color);
+    font-size: 24px;
+    font-family: var(--secondary-font);
+
+}
+
+.button-discovery{
+    position: absolute;
+    top: 45%;
+    left: 18%;
+    color: var(--thrid-color);
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-discovery:hover{
+    background-color: var(--secondary-color);
 }
