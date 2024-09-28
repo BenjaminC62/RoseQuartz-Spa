@@ -49,9 +49,6 @@
     align-items: center;
 }
 
-li{
-    margin: 1rem;
-}
 
 li a{
     color: var(--thrid-color);
