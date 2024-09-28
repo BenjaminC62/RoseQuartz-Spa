@@ -2,20 +2,6 @@
 
 /* Variables, utilities */
 
-:root{
-
-    --primary-color: #c03667;
-    --secondary-color: #d38b9c;
-    --thrid-color: #ffe3ef;
-
-    --primary-font: 'Poppins', sans-serif;
-    --secondary-font: 'Open Sans', sans-serif;
-
-    --front-index: z-index: 10;
-    --back-index: z-index: 1;
-
-}
-
 *{
     margin: 0;
     padding: 0;
