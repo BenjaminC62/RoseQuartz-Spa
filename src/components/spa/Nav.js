@@ -1,5 +1,6 @@
 import React from "react";
 import img1 from "./../../images/logo.png";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Nav() {
   return (
@@ -25,13 +26,9 @@ function Nav() {
             <span>SEARCH</span>
           </div>
           <ul className="liste-nav">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <a href="/">
+            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
+            <Link to="/">
               <img
                 className="image-logo"
                 src={img1}
@@ -39,13 +36,9 @@ function Nav() {
                 width="120px"
                 height="120px"
               />
-            </a>
-            <li>
-              <a href="/services">Services</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
+            </Link>
+            <CustomLink to="/services">Services</CustomLink>
+            <CustomLink to="/contact">Contact</CustomLink>
           </ul>
           <div className="right-content">
             <p>CART</p>
@@ -61,6 +54,18 @@ function Nav() {
         </menu>
       </nav>
     </header>
+  );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvePath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvePath.pathname, end: true });
+  return (
+    <li className={isActive === to ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
   );
 }
 

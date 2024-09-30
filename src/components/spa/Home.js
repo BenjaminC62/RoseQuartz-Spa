@@ -21,6 +21,8 @@ function Home() {
               src={spaImage}
               width="100%"
               height="1080px"
+              loading="eager"
+              alt="spa"
             />
             <input
               className="button-discovery"
