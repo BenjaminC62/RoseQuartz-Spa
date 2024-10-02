@@ -1,5 +1,6 @@
 import "./styles/App.css";
 import "./styles/Home.css";
+import "./styles/Footer.css";
 
 import Nav from "./components/spa/Nav";
 import Home from "./components/spa/Home";
@@ -7,6 +8,7 @@ import Contact from "./components/spa/Contact";
 import About from "./components/spa/About";
 import Services from "./components/spa/Services";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/spa/Footer";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
