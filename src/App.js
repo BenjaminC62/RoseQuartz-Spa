@@ -10,6 +10,7 @@ import Services from "./components/spa/Services";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/spa/Footer";
 import React from "react";
+import { motion } from "framer-motion";
 
 function App() {
   return (
