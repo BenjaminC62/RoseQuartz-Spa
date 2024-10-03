@@ -1,5 +1,6 @@
 import React from "react";
 import spaImage from "./../../images/main-spa.png";
+import GridServices from "./HomePage/GridServices";
 
 function Home() {
   const data = [
@@ -29,6 +30,7 @@ function Home() {
               type="button"
               value="discover"
             />
+            <GridServices />
           </div>
         );
       })}
