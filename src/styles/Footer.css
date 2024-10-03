@@ -1,4 +1,5 @@
-.footer-container{
+.footer-container {
     background-color: var(--primary-color);
     color: var(--thrid-color);
+    padding: 20px;
 }

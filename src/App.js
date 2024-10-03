@@ -9,10 +9,11 @@ import About from "./components/spa/About";
 import Services from "./components/spa/Services";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/spa/Footer";
+import React from "react";
 
 function App() {
   return (
-    <div className="Container">
+    <React.Fragment>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
