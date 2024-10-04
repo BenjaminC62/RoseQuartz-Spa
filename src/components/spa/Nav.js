@@ -6,8 +6,8 @@ import GoUp from "./HomePage/GoUp";
 function Nav() {
   return (
     <header>
-      <GoUp />
       <nav className="navbar" id="navbar">
+        <GoUp />
         <menu className="sous-nav">
           <div className="left-content">
             <svg

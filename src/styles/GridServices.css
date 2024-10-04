@@ -2,7 +2,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    text-align: center;
+    gap: 20px;
     background-color: var(--grey-color);
+    font-family: var(--secondary-font);
+    margin-top: -3px;
+    padding: 15px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: var(--dark-grey-color);
+}
+
+.service-title{
+    font-size: 24px;
+    font-family: var(--primary-font);
+}
+
+.service{
+    place-self: center; /*center the content of a grid*/
+}
+
+.service-icon{
+    margin-left: 10px;
 }

@@ -1,8 +1,8 @@
 .up-arrow{
     position: fixed;
-    bottom: 20px;
     right: 20px;
+    bottom: 20px;
     width: 50px;
-    z-index: 1000;
+    z-index: var(--front-index);
     cursor: pointer;
 }
