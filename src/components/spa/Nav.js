@@ -1,11 +1,13 @@
 import React from "react";
 import img1 from "./../../images/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import GoUp from "./HomePage/GoUp";
 
 function Nav() {
   return (
     <header>
-      <nav className="navbar">
+      <GoUp />
+      <nav className="navbar" id="navbar">
         <menu className="sous-nav">
           <div className="left-content">
             <svg

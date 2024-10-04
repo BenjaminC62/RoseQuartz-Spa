@@ -14,7 +14,7 @@ function Home() {
     <main>
       {data.map((value) => {
         return (
-          <div className="arrival-page">
+          <div className="arrival-page" id="arrival-page">
             <span className="main-title">{value.name}</span>
             <span className="main-sub-title">{value.subTitle}</span>
             <img
