@@ -1,15 +1,17 @@
 .grid-services{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    background-color: var(--grey-color);
+    grid-template-rows: auto auto;
+    gap: 70px;
+    background-color: var(--secondary-color);
     font-family: var(--secondary-font);
     margin-top: -3px;
     padding: 15px;
     padding-bottom: 50px;
     padding-top: 50px;
     color: var(--dark-grey-color);
+    place-items: center;
+    
 }
 
 .service-title{
@@ -17,10 +19,20 @@
     font-family: var(--primary-font);
 }
 
-.service{
-    place-self: center; /*center the content of a grid*/
-}
 
 .service-icon{
     margin-left: 10px;
+}
+
+.services-icon-text{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
 }
