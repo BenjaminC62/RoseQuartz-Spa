@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5a3b3;
     padding: 4em;
 }
 
@@ -12,4 +11,37 @@
     height: auto;
     aspect-ratio: 16/9;
     border-radius: 5px;
+}
+
+.spa-background-next-section{
+    background-color: #f5a3b3;
+}
+
+.spa-symbol-relaxation{
+    opacity: 0.5;
+}
+
+.spa-quote{
+    position: relative;
+    top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    color: var(--thrid-color);
+}
+
+.spa-quote-author{
+    font-size: 20px;
+    font-family: var(--primary-font);
+}
+
+.spa-quote-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--primary-font);
 }
