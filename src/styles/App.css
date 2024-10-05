@@ -56,6 +56,17 @@ li a:hover{
     z-index: 100;
 }
 
+.nav-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.nav-menu{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px){
     .liste-nav{
         display: none;
