@@ -1,6 +1,7 @@
 import React from "react";
 import spaImage from "./../../images/main-spa.png";
 import GridServices from "./HomePage/GridServices";
+import Video from "./HomePage/Video";
 
 function Home() {
   const data = [
@@ -31,6 +32,7 @@ function Home() {
               value="discover"
             />
             <GridServices />
+            <Video />
           </div>
         );
       })}

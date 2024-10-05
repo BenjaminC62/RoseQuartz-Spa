@@ -1,0 +1,9 @@
+.spa-video{
+    position: absolute;
+    
+}
+
+.bloc-spa-video{
+    background-color: var(--purple-variant-color);
+    padding: 25em;
+}
