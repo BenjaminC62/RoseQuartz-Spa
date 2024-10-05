@@ -2,6 +2,7 @@ import React from "react";
 import spaImage from "./../../images/main-spa.png";
 import GridServices from "./HomePage/GridServices";
 import VideoQuote from "./HomePage/VideoQuote";
+import { motion } from "framer-motion";
 
 function Home() {
   const data = [
@@ -23,9 +24,6 @@ function Home() {
               className="button-discovery"
               type="button"
               value="discover"
-              onClick={() => {
-                
-              }}
             />
             <GridServices />
             <VideoQuote />

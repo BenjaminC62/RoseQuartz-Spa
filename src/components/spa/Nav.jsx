@@ -2,10 +2,12 @@ import React from "react";
 import img1 from "./../../images/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import GoUp from "./HomePage/GoUp";
+import UpperNav from "./UpperNav";
 
 function Nav() {
   return (
     <header>
+      <UpperNav />
       <nav className="navbar" id="navbar">
         <GoUp />
         <menu className="sous-nav">
