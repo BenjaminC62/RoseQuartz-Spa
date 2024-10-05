@@ -3,13 +3,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     gap: 70px;
-    background-color: var(--secondary-color);
+    background-color: #c03567;
     font-family: var(--secondary-font);
     margin-top: -3px;
     padding: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     padding-top: 100px;
-    color: var(--dark-grey-color);
+    color: #f0e6e7;
     place-items: center;
     
 }

@@ -1,9 +1,15 @@
-.spa-video{
-    position: absolute;
-    
+.bloc-spa-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5a3b3;
+    padding: 4em;
 }
 
-.bloc-spa-video{
-    background-color: var(--purple-variant-color);
-    padding: 25em;
+.spa-video {
+    position: relative;
+    top: -250px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
 }
