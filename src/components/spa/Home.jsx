@@ -1,13 +1,13 @@
 import React from "react";
 import spaImage from "./../../images/main-spa.png";
 import GridServices from "./HomePage/GridServices";
-import Video from "./HomePage/Video";
+import VideoQuote from "./HomePage/VideoQuote";
 
 function Home() {
   const data = [
     {
       name: "Place of relaxation",
-      subTitle: "lorem ispum dolor sit amet",
+      subTitle: "Experience tranquility and bliss with our premium spa treatments.",
     },
   ];
 
@@ -18,21 +18,17 @@ function Home() {
           <div className="arrival-page" id="arrival-page">
             <span className="main-title">{value.name}</span>
             <span className="main-sub-title">{value.subTitle}</span>
-            <img
-              className="main-img"
-              src={spaImage}
-              width="100%"
-              height="1080px"
-              loading="eager"
-              alt="spa"
-            />
+            <div className="arrival-page" id="arrival-page" style={{ backgroundImage: `url(${spaImage})`, backgroundSize: 'cover', height: '100vh' }}></div>
             <input
               className="button-discovery"
               type="button"
               value="discover"
+              onClick={() => {
+                
+              }}
             />
             <GridServices />
-            <Video />
+            <VideoQuote />
           </div>
         );
       })}

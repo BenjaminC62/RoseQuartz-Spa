@@ -4,7 +4,7 @@ import "./../../../styles/GridServices.css";
 function GridServices() {
   return (
     <section>
-      <div className="grid-services">
+      <div className="grid-services" id="#grid-services">
         <div className="service">
           <div className="services-icon-text">
             <span className="service-title">Massages Relaxants</span>

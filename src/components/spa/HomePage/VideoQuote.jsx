@@ -2,7 +2,9 @@ import React from "react";
 import "./../../../styles/Video.css";
 import relaxationSymbol1 from "./../../../images/relaxation-symbol-1.png";
 
-function Video() {
+//TODO: Create a carousel with embla-carousel
+
+function VideoQuote() {
   return (
     <section className="spa-background-next-section">
       <div className="bloc-spa-video">
@@ -21,4 +23,4 @@ function Video() {
   );
 }
 
-export default Video;
+export default VideoQuote;

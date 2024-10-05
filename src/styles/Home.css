@@ -8,9 +8,7 @@
     --primary-color: #c03667;
     --secondary-color: #d38b9c;
     --thrid-color: #ffe3ef;
-    --fourth-color: #764b88;
-    --fifth-color: #4f4f81;
-    --six-color: #354e6f;
+    --fourth-color: #ec91d8;
     --basic-color: #ffffff;
     --dark-color: #000000;
     --grey-color: #bbbbbb;
@@ -20,46 +18,73 @@
     --primary-font: 'Fredoka', sans-serif;
     --secondary-font: 'Open Sans', sans-serif;
 
-    --front-index: z-index: 10;
+    --front-index: z-index: 100;
     --back-index: z-index: 1;
 
 }
 
 .main-title{
     position: absolute;
-    top: 28%;
-    left: 18%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
     color: var(--thrid-color);
-    font-size: 72px;
+    font-size: 4rem;
     font-family: var(--primary-font);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 
 }
 
 .main-sub-title{
     position: absolute;
     top: 40%;
-    left: 18%;
+    left: 32%;
     color: var(--thrid-color);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--secondary-font);
+    opacity: 0.8;
 
 }
 
 .button-discovery{
     position: absolute;
     top: 45%;
-    left: 18%;
+    left: 28%;
     color: var(--thrid-color);
     font-size: 24px;
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
 .button-discovery:hover{
-    background-color: var(--secondary-color);
+    background-color: #f5a3b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    color: var(--dark-grey-color);
+    transform: translateX(10%);
+}
+
+.main-title,
+.main-sub-title,
+.button-discovery {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.arrival-page {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

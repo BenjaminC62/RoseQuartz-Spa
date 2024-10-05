@@ -14,11 +14,12 @@
 }
 
 .spa-background-next-section{
-    background-color: #f5a3b3;
+    background-color: var(--fourth-color);
+    margin-bottom: -200px;
 }
 
 .spa-symbol-relaxation{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .spa-quote{
