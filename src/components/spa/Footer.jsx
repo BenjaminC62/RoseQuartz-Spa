@@ -32,14 +32,18 @@ function Footer() {
             </div>
             <div className="footer-second-category">
               <h2>Important Links</h2>
-              <a href="#">Book</a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
+              <Link to="/book" id="footer-space-links">Book an Appointment</Link>
+              <Link to="/services" id="footer-space-links">Our Services</Link>
+              <Link to="/about" id="footer-space-links">About Us</Link>
+              <Link to="/contact" id="footer-space-links">Contact</Link>
             </div>
             <div className="footer-third-category">
               <h2>Contact Us</h2>
-              <span></span>
+              <span>Phone: +33 6 12 34 56 78</span>
+              <br />
+              <span>Email: spa-club@gmail.com</span>
+              <br />
+              <span>Address: 123 Spa Street, Paris, France</span>
             </div>
             <div className="footer-fourth-category">
               <h2>Openin Hours</h2>
@@ -76,7 +80,7 @@ function Footer() {
             </div>
           </div>
           <hr className="footer-separation" />
-          <span className="spa-club-copyright">© 2024 - SPA CLUB</span>
+          <span className="spa-club-copyright">© 2024 - SPA CLUB. All Rights Reserved.</span>
         </div>
       </div>
     </footer>

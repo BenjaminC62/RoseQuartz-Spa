@@ -3,6 +3,7 @@ import img1 from "./../../images/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import GoUp from "./HomePage/GoUp";
 import UpperNav from "./UpperNav";
+import { motion } from "framer-motion";
 
 function Nav() {
   return (
