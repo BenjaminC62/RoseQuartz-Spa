@@ -36,3 +36,16 @@
     align-items:center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 1038px){
+    .grid-services{
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    .service{
+        align-items: flex-start; /* align the epilation title to the left */
+    }
+    
+}

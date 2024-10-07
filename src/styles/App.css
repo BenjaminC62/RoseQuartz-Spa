@@ -71,7 +71,7 @@ li a:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1038px){
     .liste-nav{
         display: none;
     }

@@ -89,3 +89,29 @@
     text-decoration: none;
     font-family: var(--secondary-font);
 }
+
+@media screen and (max-width: 1038px) {
+    .news-letter-inscription {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-email-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-category-bloc{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-first-category, .footer-second-category, .footer-third-category, .footer-fourth-category{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-fourth-category{
+       
+    }
+}

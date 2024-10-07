@@ -83,6 +83,31 @@
     background-position: center;
 }
 
+@media screen and (max-width: 1038px){
+    .main-title{
+        font-size: 3rem;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-sub-title{
+        font-size: 1rem;
+        top: 22%;
+        left: 0%;
+        width: 100%;
+        text-align: center
+    }
+
+    .button-discovery{
+        font-size: 18px;
+        top: 27%;
+        left: 0%;
+    
+    }
+    
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
