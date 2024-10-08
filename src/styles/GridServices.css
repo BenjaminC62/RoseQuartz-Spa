@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     gap: 70px;
-    background-color: #c03567;
+    background-color: var(--third-color);
     font-family: var(--secondary-font);
     margin-top: -3px;
     padding: 15px;
