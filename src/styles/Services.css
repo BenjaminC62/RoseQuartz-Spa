@@ -80,4 +80,8 @@
     .service-title {
         font-size: 22px;
     }
+
+    .service-sub-title {
+        font-size: 14px;
+    }
 }
