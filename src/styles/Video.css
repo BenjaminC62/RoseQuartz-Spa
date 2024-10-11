@@ -63,9 +63,17 @@
 }
 
 .spa-quote-button-upward{
-    
+    margin-bottom: 20px;
+    padding-right: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
 
 .spa-quote-button-backward{
-    
+    margin-bottom: 20px;
+    padding-right: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
