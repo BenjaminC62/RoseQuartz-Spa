@@ -68,6 +68,9 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-image: url("../images/right-arrow.png");
+    background-size: cover;
+    background-color: var(--fourth-color);
 }
 
 .spa-quote-button-backward{
@@ -76,4 +79,7 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-image: url("../images/left-arrow.png");
+    background-size: cover;
+    background-color: var(--fourth-color);
 }
