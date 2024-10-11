@@ -49,5 +49,23 @@
 
 .change-quotes{
     display: flex;
+}
+
+.quotes-text-author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--primary-font);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spa-quote-button-upward{
+    
+}
+
+.spa-quote-button-backward{
     
 }

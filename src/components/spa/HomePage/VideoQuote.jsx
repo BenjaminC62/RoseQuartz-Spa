@@ -4,6 +4,9 @@ import relaxationSymbol1 from "./../../../images/relaxation-symbol-1.png";
 
 function VideoQuote() {
 
+  const backInput = document.querySelector(".spa-quote-button-backward");
+  const forwardInput = document.querySelector(".spa-quote-button-upward");
+
   const quotes = [
     {
       id : 1,
@@ -26,12 +29,23 @@ function VideoQuote() {
 
   const changesImage = () => {
     console.log(selectedId);
-    if (selectedId === quotes.length) {
-      setSelectedId(1); 
-    } else {
-      setSelectedId(selectedId + 1); 
+      if(backInput === document.activeElement) {
+        if(selectedId === 1) {
+          setSelectedId(quotes.length);
+        }
+        else{
+          setSelectedId(selectedId - 1); 
+        }
+      }
+      if(forwardInput === document.activeElement) {
+        if(selectedId === quotes.length) {
+          setSelectedId(1);
+        }
+        else {
+          setSelectedId(selectedId + 1);
+        }
+      }
     }
-  }
 
   const selectedQuote = quotes.find(quote => quote.id === selectedId);
 
@@ -44,9 +58,11 @@ function VideoQuote() {
         <img className="spa-symbol-relaxation" width="300"  height="300" src={relaxationSymbol1} alt="spa" />
             <div className="change-quotes">
               <input type="button" value="" className="spa-quote-button-backward" onClick={changesImage}/>
-              <span className="spa-quote-text">{selectedQuote.quote}</span>
-              <br />
-              <span className="spa-quote-author">{selectedQuote.author}</span>
+              <div className="quotes-text-author">
+                <span className="spa-quote-text">{selectedQuote.quote}</span>
+                <br />
+                <span className="spa-quote-author">{selectedQuote.author}</span>
+              </div>
               <input type="button" value="" className="spa-quote-button-upward" onClick={changesImage}/>
             </div>
       </div>
