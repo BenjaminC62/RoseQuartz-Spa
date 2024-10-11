@@ -46,3 +46,8 @@
     font-size: 30px;
     font-family: var(--primary-font);
 }
+
+.change-quotes{
+    display: flex;
+    
+}
