@@ -1,6 +1,7 @@
 import React from "react";
 import "./../../../styles/Video.css";
 import relaxationSymbol1 from "./../../../images/relaxation-symbol-1.png";
+import video from "./../../../images/spa-pool.webm";
 
 function VideoQuote() {
 
@@ -38,8 +39,15 @@ function VideoQuote() {
   return (
     <section className="spa-background-next-section">
       <div className="bloc-spa-video">
-        <iframe className="spa-video" width="1280" height="815" src="https://www.youtube.com/embed/p7tS77quSZI?si=ik997poJmTOqrgCw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <video className="spa-video" autoPlay loop muted>
+          <source  src={video} type="video/webm" />
+        </video>
       </div>
+
+      <div className="bubble"></div>
+      <div className="bubble"></div>
+      <div className="bubble"></div>
+
       <div className="spa-quote">
         <img className="spa-symbol-relaxation" width="300"  height="300" src={relaxationSymbol1} alt="spa" />
             <div className="change-quotes">

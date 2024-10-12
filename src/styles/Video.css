@@ -8,9 +8,11 @@
 .spa-video {
     position: relative;
     top: -250px;
+    width: 70%;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .spa-background-next-section{
@@ -71,6 +73,7 @@
     background-image: url("../images/right-arrow.png");
     background-size: cover;
     background-color: var(--fourth-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .spa-quote-button-backward{
@@ -82,4 +85,10 @@
     background-image: url("../images/left-arrow.png");
     background-size: cover;
     background-color: var(--fourth-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.spa-quote-button-upward:hover,
+.spa-quote-button-backward:hover {
+    transform: scale(1.1);
 }
