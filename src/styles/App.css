@@ -19,6 +19,7 @@ html{
     list-style: none;
     display: flex;
     align-items: center;
+    margin-right: 5%;
 }
 
 .sous-nav{
@@ -26,6 +27,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .left-content{
@@ -40,17 +42,33 @@ html{
     align-items: center;
 }
 
+li {
+    margin: 0 15px;
+}
 
 li a{
     color: var(--thrid-color);
     text-decoration: none;
     margin: 2rem;
-    font-size: 30px;
+    font-size: 24px;
     font-family: var(--primary-font);
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 li a:hover{
     background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+li a.active {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid transparent;
 }
 
 .navbar{
@@ -69,7 +87,65 @@ li a:hover{
 
 .nav-menu{
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.navbar-search{
+    border-radius: 30px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 2px solid var(--secondary-color);
+}
+
+.navbar-search:focus{
+    outline: none;
+}
+
+.navbar-search::placeholder{
+    color: var(--third-color);
+    font-family: var(--primary-font);
+}
+
+.navbar-cart{
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    padding: 10px 20px;
+}
+
+.nav-menu:hover {
+    transform: scale(1.1);
+
+}
+
+.nav-menu:hover+.menu-dropdown,
+.menu-dropdown:hover {
+    display: block;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 @media screen and (max-width: 1038px){
     .liste-nav{

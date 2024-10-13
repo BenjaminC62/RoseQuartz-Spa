@@ -49,7 +49,7 @@ function VideoQuote() {
       <div className="bubble"></div>
 
       <div className="spa-quote">
-        <img className="spa-symbol-relaxation" width="300"  height="300" src={relaxationSymbol1} alt="spa" />
+        <img className="spa-symbol-relaxation" width="300"  height="300" src={relaxationSymbol1} alt="spa" aria-label="Previous quote"/>
             <div className="change-quotes">
               <input type="button" value="" className="spa-quote-button-backward" onClick={() => changesImage("backward")}/>
               <div className="quotes-text-author">
@@ -57,7 +57,7 @@ function VideoQuote() {
                 <br />
                 <span className="spa-quote-author">{selectedQuote.author}</span>
               </div>
-              <input type="button" value="" className="spa-quote-button-upward" onClick={() => changesImage("forward")}/>
+              <input type="button" value="" className="spa-quote-button-upward" onClick={() => changesImage("forward")} aria-label="Next quote"/>
             </div>
       </div>
       
