@@ -7,19 +7,29 @@ function VideoQuote() {
 
   const quotes = [
     {
-      id : 1,
-      quote : "The best way to find yourself is to lose yourself in the service of others.",
-      author : "Mahatma Gandhi"
+      id: 1,
+      quote: "The best way to find yourself is to lose yourself in the service of others.",
+      author: "Mahatma Gandhi"
     },
     {
-      id : 2,
-      quote : "Test2",
-      author : "Mahatma Gandhi2"
+      id: 2,
+      quote: "Happiness is not something ready-made. It comes from your own actions.",
+      author: "Dalai Lama"
     },
     {
-      id : 3,
-      quote : "Test3",
-      author : "Mahatma Gandhi3"
+      id: 3,
+      quote: "Calm mind brings inner strength and self-confidence, so that’s very important for good health.",
+      author: "Dalai Lama"
+    },
+    {
+      id: 4,
+      quote: "To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear.",
+      author: "Buddha"
+    },
+    {
+      id: 5,
+      quote: "The greatest wealth is health.",
+      author: "Virgil"
     }
   ]
 
