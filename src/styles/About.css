@@ -1,0 +1,22 @@
+.about-section {
+    padding: 4rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
