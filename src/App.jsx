@@ -7,6 +7,7 @@ import Home from "./components/spa/Home";
 import Contact from "./components/spa/Contact";
 import About from "./components/spa/About";
 import Services from "./components/spa/Services/Services";
+import LoginForm from "./components/spa/Login/LoginForm";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/spa/Footer";
 import React from "react";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/LoginForm" element={<LoginForm />} />
       </Routes>
       <Footer />
     </React.Fragment>
