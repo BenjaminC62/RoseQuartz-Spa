@@ -35,7 +35,7 @@ function Nav() {
             <img className="nav-menu" width="40px" height="40px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVR4nO3WyQnAMAwFUZcXp/+zDMF9TDrQJcYLmdfBRwimFEmSBgFuoLG/BtRsyMM5+i+GVCDYXwDX51+SJEmaCDN+iZ5dxIyfLMx4SZJ0Gsz4JXp2ETN+sjDjJUlloBfbFyzbu4GNjwAAAABJRU5ErkJggg==" />
             <div className="menu-dropdown">
               <ul>
-                <li><Link to="/LoginForm">Login / Register</Link></li>
+                <li><Link to="/LoginForm">Login</Link></li>
                 <li><Link to="/settings">Settings</Link></li>
                 <li><Link to="/logout">Logout</Link></li>
               </ul>

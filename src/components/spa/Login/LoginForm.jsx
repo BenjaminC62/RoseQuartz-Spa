@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../../../styles/LoginForm.css";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -42,6 +43,8 @@ function LoginForm() {
         <button type="submit" className="login-btn">
           Login
         </button>
+
+        <Link to="login-form-sign-in"><span className="login-sign-in-text">Not a member sign in here !</span></Link>
       </form>
     </div>
   );
