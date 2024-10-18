@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import "../../../styles/LoginForm.css";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -7,7 +8,6 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logique de soumission, validation, etc.
     console.log("Email:", email);
     console.log("Password:", password);
   };
