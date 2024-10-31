@@ -3,6 +3,7 @@ import spaImage from "./../../images/main-spa.png";
 import GridServices from "./HomePage/GridServices";
 import VideoQuote from "./HomePage/VideoQuote";
 import { motion } from "framer-motion";
+import Tarif from "./HomePage/Tarif";
 
 function Home() {
   const data = [
@@ -27,6 +28,7 @@ function Home() {
             />
             <GridServices />
             <VideoQuote />
+            <Tarif />
           </div>
         );
       })}
