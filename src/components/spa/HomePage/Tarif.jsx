@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../../styles/Tarif.css'
 
 const Tarif = () => {
   return (
@@ -11,6 +12,22 @@ const Tarif = () => {
             <li>1h de soin + 1h de massage: 100€</li>
         </ul>
         <p>Les tarifs sont dégressifs si vous prenez plusieurs séances.</p>
+        <div className="tarif">
+            <div>
+                <h2>1 séance</h2>
+                <p>1h de massage: 50€</p>
+            </div>
+            <div>
+                <h2>3 séances</h2>
+                <p>1h de massage: 135€</p>
+            </div>
+            <div>
+                <h2>5 séances</h2>
+                <p>1h de massage: 200€</p>
+            </div>
+        </div>
+        <span>Les tarifs sont dégressifs si vous prenez plusieurs séances.</span>
+        
     </div>
   )
 }
